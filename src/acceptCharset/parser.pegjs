@@ -2,12 +2,12 @@ import { _ } from "../shared/oneSpace.js"
 import { commaDelimiter } from "../shared/commaDelimiter.js"
 
 start
- = mediaRange|.., commaDelimiter| commaDelimiter?
+ = charsetRange|.., commaDelimiter| commaDelimiter?
 
-mediaRange
- = type:[a-zA-Z*]+ "/" subtype:[a-zA-Z*]+ _ params:params*
+charsetRange
+ = charset:[a-zA-Z0-9-]+ _ params:params*
  {
-   return { type: type.join(""), subtype: subtype.join(""), params: params };
+   return { charset: charset.join(""), params: params };
  }
 
 params
