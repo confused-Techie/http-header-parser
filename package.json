@@ -1,0 +1,16 @@
+{
+  "name": "http-header-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "node --test test/",
+    "generate": "peggy ./src/parser.pegjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "peggy": "^4.0.2"
+  }
+}
