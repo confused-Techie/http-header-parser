@@ -1,3 +1,4 @@
+import { _ } from "../shared/oneSpace.js"
 
 start
  = mediaRange|.., mediaRangeDelimiter| mediaRangeDelimiter?
@@ -16,14 +17,3 @@ params
 
 mediaRangeDelimiter
  = _ "," _
-
-_ = oneSpace*
-
-oneSpace
- = whitespace / lineTerminator
-
-whitespace "whitespace"
- = [\t\v\f ]
-
-lineTerminator "end of line"
- = [\n\r]

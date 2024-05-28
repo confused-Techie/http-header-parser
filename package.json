@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "test": "node --test test/",
-    "generate": "peggy ./src/parser.pegjs"
+    "generate": "peggy ./src/accept/parser.pegjs & peggy ./src/shared/oneSpace.pegjs"
   },
   "keywords": [],
   "author": "",
