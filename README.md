@@ -23,3 +23,13 @@ accept-params  = ";" "q" "=" qvalue *( accept-extension )
 
 accept-extension = ";" token [ "=" ( token | quoted-string ) ]
 ```
+
+Usage:
+
+```js
+const parser = require("http-header-parser");
+
+const str = "audio/*; q=0.2, audio/basic";
+
+const parsed = parser.accept(str);
+```
