@@ -5,12 +5,13 @@
   "main": "./src/index.js",
   "scripts": {
     "test": "node --test test/",
-    "generate:win": "powershell ./generate/generate.ps1"
+    "generate:win": "powershell ./generate/generate.ps1",
+    "generate": "pegjs ./src/accept/parser.pegjs"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "peggy": "^4.0.2"
+    "pegjs": "^0.10.0"
   }
 }
