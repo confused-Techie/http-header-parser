@@ -125,3 +125,15 @@ As well as extend the validator for each spec.
 That means each individual package will probably be rather small, and can then include an AST for their use case only.
 
 That does increase the possibility of breakage due to any changes in the core system, but would be really cool.
+
+
+---
+
+A quick note, I would like to move to reading local files for node expansion
+
+# Syntax Structure differences
+
+RFC2068:
+  - Defines alternatives as "|"
+RFC822:
+  - Defines alternatives as "/"
