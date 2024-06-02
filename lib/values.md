@@ -65,3 +65,4 @@ This document will only list those datatypes that could not be further expanded.
 * `SP`
 * `HT`
 * `DOUBLE-QUOTE-MARK`
+* `TEXT`: While this may be possible to expand, it proves rather difficult to do so.

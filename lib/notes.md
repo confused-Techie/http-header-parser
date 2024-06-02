@@ -137,3 +137,12 @@ RFC2068:
   - Defines alternatives as "|"
 RFC822:
   - Defines alternatives as "/"
+
+---
+
+Comments break everything, due to the definition containing itself.
+
+If I read the file and build an AST then add that like I do for everything else, then we have inifinite recursion.
+
+Otherwise I've tried appending it to the end of the current tokenset and still that breaks things.
+Plus seems to finally reveal the "Array order is not guaranteed" thing.
